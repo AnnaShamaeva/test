@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаПосетители" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Посетители</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа посетители</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="ГруппаПосетителиРасширеннаяПодсказка" id="29"/>
+			<ChildItems>
+				<Table name="Посетители" id="3">
+					<Representation>List</Representation>
+					<ChangeRowSet>false</ChangeRowSet>
+					<ChangeRowOrder>false</ChangeRowOrder>
+					<SelectionMode>SingleRow</SelectionMode>
+					<RowSelectionMode>Row</RowSelectionMode>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<DataPath>Посетители</DataPath>
+					<RowPictureDataPath>Посетители.НаПаузе</RowPictureDataPath>
+					<RowsPicture>
+						<xr:Ref>CommonPicture.Пауза</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</RowsPicture>
+					<CommandSet>
+						<ExcludedCommand>Add</ExcludedCommand>
+						<ExcludedCommand>CancelSearch</ExcludedCommand>
+						<ExcludedCommand>Change</ExcludedCommand>
+						<ExcludedCommand>Copy</ExcludedCommand>
+						<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+						<ExcludedCommand>Delete</ExcludedCommand>
+						<ExcludedCommand>EndEdit</ExcludedCommand>
+						<ExcludedCommand>Find</ExcludedCommand>
+						<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+						<ExcludedCommand>MoveDown</ExcludedCommand>
+						<ExcludedCommand>MoveUp</ExcludedCommand>
+						<ExcludedCommand>OutputList</ExcludedCommand>
+						<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+						<ExcludedCommand>SearchHistory</ExcludedCommand>
+						<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+						<ExcludedCommand>SortListAsc</ExcludedCommand>
+						<ExcludedCommand>SortListDesc</ExcludedCommand>
+					</CommandSet>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ПосетителиКонтекстноеМеню" id="4"/>
+					<AutoCommandBar name="ПосетителиКоманднаяПанель" id="5">
+						<ChildItems>
+							<Button name="КнопкаДобавитьПосетителя" id="1">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ДобавитьПосетителя</CommandName>
+								<BackColor>#FFE100</BackColor>
+								<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+								<ExtendedTooltip name="КнопкаДобавитьПосетителяРасширеннаяПодсказка" id="2"/>
+							</Button>
+							<Button name="ПосетителиПоставитьНаПаузу" id="35">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ПоставитьНаПаузу</CommandName>
+								<ExtendedTooltip name="ПосетителиПоставитьНаПаузуРасширеннаяПодсказка" id="36"/>
+							</Button>
+							<Button name="ПосетителиПродолжить" id="37">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ПродолжитьПосещение</CommandName>
+								<ExtendedTooltip name="ПосетителиПродолжитьРасширеннаяПодсказка" id="38"/>
+							</Button>
+							<Button name="ПосетителиОповестить" id="39">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ОповеститьОВремени</CommandName>
+								<ExtendedTooltip name="ПосетителиОповеститьРасширеннаяПодсказка" id="40"/>
+							</Button>
+							<Button name="КнопкаЗавершитьПосещение" id="33">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ЗавершитьПосещение</CommandName>
+								<RepresentationInContextMenu>AdditionalInContextMenu</RepresentationInContextMenu>
+								<ExtendedTooltip name="КнопкаЗавершитьПосещениеРасширеннаяПодсказка" id="34"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ПосетителиРасширеннаяПодсказка" id="6"/>
+					<SearchStringAddition name="ПосетителиСтрокаПоиска" id="7">
+						<AdditionSource>
+							<Item>Посетители</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПосетителиСтрокаПоискаКонтекстноеМеню" id="8"/>
+						<ExtendedTooltip name="ПосетителиСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ПосетителиСостояниеПросмотра" id="10">
+						<AdditionSource>
+							<Item>Посетители</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПосетителиСостояниеПросмотраКонтекстноеМеню" id="11"/>
+						<ExtendedTooltip name="ПосетителиСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ПосетителиУправлениеПоиском" id="13">
+						<AdditionSource>
+							<Item>Посетители</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ПосетителиУправлениеПоискомКонтекстноеМеню" id="14"/>
+						<ExtendedTooltip name="ПосетителиУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="Selection">ПосетителиВыбор</Event>
+						<Event name="OnActivateRow">ПосетителиПриАктивизацииСтроки</Event>
+					</Events>
+					<ChildItems>
+						<InputField name="ПосетителиРегистратор" id="30">
+							<DataPath>Посетители.Регистратор</DataPath>
+							<Visible>false</Visible>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПосетителиРегистраторКонтекстноеМеню" id="31"/>
+							<ExtendedTooltip name="ПосетителиРегистраторРасширеннаяПодсказка" id="32"/>
+						</InputField>
+						<InputField name="ПосетителиПосетитель" id="16">
+							<DataPath>Посетители.Посетитель</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПосетителиПосетительКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ПосетителиПосетительРасширеннаяПодсказка" id="18"/>
+						</InputField>
+						<InputField name="ПосетителиТелефон" id="19">
+							<DataPath>Посетители.Телефон</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПосетителиТелефонКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ПосетителиТелефонРасширеннаяПодсказка" id="21"/>
+						</InputField>
+						<InputField name="ПосетителиНачало" id="41">
+							<DataPath>Посетители.Начало</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПосетителиНачалоКонтекстноеМеню" id="42"/>
+							<ExtendedTooltip name="ПосетителиНачалоРасширеннаяПодсказка" id="43"/>
+						</InputField>
+						<InputField name="ПосетителиДлительность" id="22">
+							<DataPath>Посетители.Длительность</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<Format>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЧН=Отсутствует</v8:content>
+								</v8:item>
+							</Format>
+							<EditFormat>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЧН=Отсутствует</v8:content>
+								</v8:item>
+							</EditFormat>
+							<ContextMenu name="ПосетителиДлительностьКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="ПосетителиДлительностьРасширеннаяПодсказка" id="24"/>
+						</InputField>
+						<InputField name="ПосетителиТаймер" id="25">
+							<DataPath>Посетители.Таймер</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<Format>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ=HH:mm:ss; ДП='Время вышло'</v8:content>
+								</v8:item>
+							</Format>
+							<EditFormat>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ=HH:mm:ss; ДП='Время вышло'</v8:content>
+								</v8:item>
+							</EditFormat>
+							<ContextMenu name="ПосетителиТаймерКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="ПосетителиТаймерРасширеннаяПодсказка" id="27"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.РабочееМесто</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Посетители" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Посетители</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Посетитель" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Посетитель</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Посетители</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Телефон" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Телефон</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Длительность" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Длительность (в минутах)</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Таймер" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таймер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Time</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПлановоеОкончание" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Плановое окончание</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Регистратор" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регистратор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.Посещение</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Начало" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начало</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="НаПаузе" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>На паузе</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СуммаПауз" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма пауз</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="НачалоТекущейПаузы" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начало</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ДобавитьПосетителя" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить посетителя</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить посетителя</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьПосетителя</Action>
+		</Command>
+		<Command name="ЗавершитьПосещение" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завершить посещение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завершить посещение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Stop</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗавершитьПосещение</Action>
+		</Command>
+		<Command name="ПоставитьНаПаузу" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поставить на паузу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поставить на паузу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Пауза</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПоставитьНаПаузу</Action>
+		</Command>
+		<Command name="ОповеститьОВремени" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оповестить о времени</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оповестить о времени</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Notifications</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОповеститьОВремени</Action>
+		</Command>
+		<Command name="ПродолжитьПосещение" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Продолжить посещение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Продолжить посещение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПродолжитьПосещение</Action>
+		</Command>
+	</Commands>
+</Form>

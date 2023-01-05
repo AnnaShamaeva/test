@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="ГруппаДата" id="19">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа дата</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДатаРасширеннаяПодсказка" id="20"/>
+			<ChildItems>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Дата" id="4">
+					<DataPath>Объект.Date</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>от</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Посетитель" id="7">
+			<DataPath>Объект.Посетитель</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПосетительКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ПосетительРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="ВидДлительности" id="21">
+			<DataPath>Объект.ВидДлительности</DataPath>
+			<ContextMenu name="ВидДлительностиКонтекстноеМеню" id="22"/>
+			<ExtendedTooltip name="ВидДлительностиРасширеннаяПодсказка" id="23"/>
+		</InputField>
+		<InputField name="ДлительностьВМинутах" id="16">
+			<DataPath>Объект.ДлительностьВМинутах</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДлительностьВМинутахКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ДлительностьВМинутахРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="Начало" id="10">
+			<DataPath>Объект.Начало</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НачалоКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="НачалоРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Окончание" id="13">
+			<DataPath>Объект.Окончание</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ОкончаниеКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ОкончаниеРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<CheckBoxField name="НаПаузе" id="24">
+			<DataPath>Объект.НаПаузе</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="НаПаузеКонтекстноеМеню" id="25"/>
+			<ExtendedTooltip name="НаПаузеРасширеннаяПодсказка" id="26"/>
+		</CheckBoxField>
+		<Table name="Паузы" id="27">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Паузы</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ПаузыКонтекстноеМеню" id="28"/>
+			<AutoCommandBar name="ПаузыКоманднаяПанель" id="29"/>
+			<ExtendedTooltip name="ПаузыРасширеннаяПодсказка" id="30"/>
+			<SearchStringAddition name="ПаузыСтрокаПоиска" id="31">
+				<AdditionSource>
+					<Item>Паузы</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПаузыСтрокаПоискаКонтекстноеМеню" id="32"/>
+				<ExtendedTooltip name="ПаузыСтрокаПоискаРасширеннаяПодсказка" id="33"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПаузыСостояниеПросмотра" id="34">
+				<AdditionSource>
+					<Item>Паузы</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПаузыСостояниеПросмотраКонтекстноеМеню" id="35"/>
+				<ExtendedTooltip name="ПаузыСостояниеПросмотраРасширеннаяПодсказка" id="36"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПаузыУправлениеПоиском" id="37">
+				<AdditionSource>
+					<Item>Паузы</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ПаузыУправлениеПоискомКонтекстноеМеню" id="38"/>
+				<ExtendedTooltip name="ПаузыУправлениеПоискомРасширеннаяПодсказка" id="39"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ПаузыНомерСтроки" id="40">
+					<DataPath>Объект.Паузы.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПаузыНомерСтрокиКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="ПаузыНомерСтрокиРасширеннаяПодсказка" id="42"/>
+				</LabelField>
+				<InputField name="ПаузыНачало" id="43">
+					<DataPath>Объект.Паузы.Начало</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПаузыНачалоКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="ПаузыНачалоРасширеннаяПодсказка" id="45"/>
+				</InputField>
+				<InputField name="ПаузыОкончание" id="46">
+					<DataPath>Объект.Паузы.Окончание</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПаузыОкончаниеКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="ПаузыОкончаниеРасширеннаяПодсказка" id="48"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.Посещение</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>
