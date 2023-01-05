@@ -19,7 +19,7 @@
 		<Metadata name="Catalog.ВидыДлительностей.Form.ФормаСписка.Form" id="09f5fb74-aa16-40e2-841e-fcdd633b9185.0" configVersion="c94699945370094a9380d1d568d36b2e00000000"/>
 		<Metadata name="Catalog.ВидыДлительностей.Form.ФормаЭлемента" id="a3c9e9ef-0022-4630-a298-75c8999fefa4" configVersion="281f23667d3dcd47a0f3917a3a680e0700000000"/>
 		<Metadata name="Catalog.ВидыДлительностей.Form.ФормаЭлемента.Form" id="a3c9e9ef-0022-4630-a298-75c8999fefa4.0" configVersion="85656a0b9c5fe24c8f71ad73abeac09800000000"/>
-		<Metadata name="Catalog.Посетители" id="d3283a52-2563-4d0c-8cb8-11cd18419553" configVersion="6d034af1c970b54aad34de3cf35d11cb00000000">
+		<Metadata name="Catalog.Посетители" id="d3283a52-2563-4d0c-8cb8-11cd18419553" configVersion="c675f30e2db6cb4ab1c62d468df8b1e200000000">
 			<Metadata name="Catalog.Посетители.Attribute.Телефон" id="013717bb-dcbc-4f9e-8505-4abbeddbf03a"/>
 			<Metadata name="Catalog.Посетители.Attribute.ТелефонБезМаски" id="7ec63abd-0208-41bf-b316-b5cbe6d4c8b7"/>
 		</Metadata>
@@ -29,7 +29,7 @@
 		<Metadata name="Catalog.Посетители.Form.ФормаСписка.Form" id="942d897a-5c13-4035-bf59-854fb734ae2d.0" configVersion="ef18b8d9241ec042a54bbf29f4a2884500000000"/>
 		<Metadata name="Catalog.Посетители.Form.ФормаЭлемента" id="47141e8b-4934-46c7-8f9c-fd918d0e1aac" configVersion="7a9e3316cf958d49bd02f6fd559d3cac00000000"/>
 		<Metadata name="Catalog.Посетители.Form.ФормаЭлемента.Form" id="47141e8b-4934-46c7-8f9c-fd918d0e1aac.0" configVersion="4f3a3abbbe279044a2de18c0e42d9c5200000000"/>
-		<Metadata name="Catalog.Посетители.ManagerModule" id="d3283a52-2563-4d0c-8cb8-11cd18419553.3" configVersion="9fcc7c3441e5934bac801debc9e7eb9100000000"/>
+		<Metadata name="Catalog.Посетители.ManagerModule" id="d3283a52-2563-4d0c-8cb8-11cd18419553.3" configVersion="1370c7ff5a9cf64697f4ed25d068da2200000000"/>
 		<Metadata name="Catalog.Посетители.ObjectModule" id="d3283a52-2563-4d0c-8cb8-11cd18419553.0" configVersion="16ccec0e14198f4bbc900a1d5176bc6d00000000"/>
 		<Metadata name="CommonPicture.Пауза" id="a52fcdd3-782e-4e84-bd6f-463b20f82aa5" configVersion="eb5c2c91387da446bbf4445d06e4860200000000"/>
 		<Metadata name="CommonPicture.Пауза.Picture" id="a52fcdd3-782e-4e84-bd6f-463b20f82aa5.0" configVersion="6d00a6af3968b7418fd78403a4e031a300000000"/>
